@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JNet</title>
+
+    
+
+    <script>
+        function startTime() {
+          const today = new Date();
+          let h = today.getHours();
+          let m = today.getMinutes();
+          let s = today.getSeconds();
+          m = checkTime(m);
+          s = checkTime(s);
+          document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+          setTimeout(startTime, 1000);
+        }
+        
+        function checkTime(i) {
+          if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+          return i;
+        }
+        </script>
+
+<style>
+  /* unvisited link */
+  a:link {
+  color: rgb(0, 0, 0);
+  }
+  /* visited link */
+  a:visited {
+  color: #000000;
+  }
+  /* mouse over link */
+  a:hover {
+  color: #000000;
+  }
+  /* selected link */
+  a:active {
+  color: #000000;
+  }
+</style>
+
+
+
+</head>
+<body>
+    During the last years Jonas has created various images about his neighbourhood. <br>
+    Furthermore he won the <a href="https://www.jugendfotopreis.de/foto.html?id=4210"><i>Jugendfotopreis</i></a>.<br><br>
+    Always about for a chat:<br>
+  <a href="mailto:jonas.noelle@goa-hh.de?subject=Hey!"><i>jonas.noelle@goa-hh.de</i></a>
+     <br> <a href="https://www.instagram.com/positivefdbck/"><i>Instagram</i></a> <br> <a href="https://www.twitter.com/jncteryx/"><i>Twitter</i></a>
+
+    
+ 
+  <style>
+    body {
+      background-image: url('b.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: 1066.45px 646.45px;
+    }
+    </style>
+
+  
+
+
+   
+
+      
+        
+    <img style=float:right src="profil.jpg" alt="me" width="602" height="352">
+        
+      
+      <div style="position: absolute; bottom: 69px; right: 1%;">
+         <i>Jonas Heinrich Nölle</i>, 15y.o.</p> 
+     </div>
+
+          <div style="position: absolute; bottom: 5px">
+             <div id="txt"></div>
+          </div>
+      
+
+
+          <style>
+            ::-moz-selection { 
+                color:rgb(60, 107, 177); 
+                background:#ffffff; 
+                text-shadow: 1px 1px 0 #5f51ad; 
+             }
+             
+             ::selection { 
+                color:rgb(255, 255, 255); 
+                background:#5254c2; 
+                text-shadow: 1px 1px 0 #7879cf; 
+             }</style>
+        
+</body>
+
+<body onload="startTime()"></body> 
+
+</html>
